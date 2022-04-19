@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="p">
+    <div class="contenedorContacto">
+        <header>
+            <a href="../index.html"><img src="../images/icon.png" alt="icon.png" class="header__logo"></a>
+            <nav>
+                <ul>
+                    <li class="linicio"><a href="../index.html">Inicio</a></li>
+                    <li><a href="tarjetas.html">Tarjetas</a>
+                        <ul>
+                            <li><a href="tarjetas.html#tarjeta_credito">Tarjeta de crédito</a></li>
+                            <li><a href="tarjetas.html#tarjeta_debito">Tarjeta de débito</a></li>
+                            <li><a href="tarjetas.html#tarjeta_digital">Tarjeta digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="abrir_cuenta.html">Abrir cuenta</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainContacto">
+            <h1>Contacto</h1>
+            <section data-aos="fade-up" data-aos-duration="2500" class="sectionFormContacto">
+                <!-- Formulario de consulta de cliente -->
+                <form action="" class="formContacto">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <input type="text" name="nombre" id="" placeholder="Ingrese nombre*" required>
+                        <input type="text" name="apellido" id="" placeholder="Ingrese apellido*" required>
+                        <input type="number" name="telefono" id="" placeholder="Ingrese telefono*" required>
+                        <input type="email" name="email" id="" placeholder="Ingrese email*" required>
+                        <select name="tipo_consulta" id="" required>
+                            <option value="" disabled selected>Seleccione tipo de consulta*</option>
+                            <option value="consulta_beneficio">Beneficios</option>
+                            <option value="consulta_seguridad">Seguridad</option>
+                            <option value="consulta_requisitos">Requisitos</option>
+                            <option value="consulta_funcionalidad">Funcionalidad</option>
+                            <option value="consulta_problemas">Problemas</option>
+                            <option value="consulta_otros">Otros...</option>
+                        </select>
+                        <label for="preferencia_contacto">Preferencia de contacto: </label>
+                        <input type="radio" name="preferencia_contacto" id="">Telefono
+                        <input type="radio" name="preferencia_contacto" id="">Email
+                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta" required></textarea>
+                        <div class="formContacto__divBoton">
+                            <input type="reset" value="Vaciar" class="formContacto__boton">
+                            <input type="submit" value="Enviar" class="formContacto__boton">
+                        </div>
+                        
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <section class="sectionContacto">
+            <!-- Otras opciones de contacto -->
+            <ul>
+                <li>
+                    <p class="tituloLista">Numero de contacto:</p>
+                    <ul>
+                        <li>0800-1234</li>
+                        <li>123</li>
+                    </ul>
+                </li>
+                <li >
+                    <p class="tituloLista">Correo de contacto:</p>
+                    <ul>
+                        <li>soporte@gmail.com</li>
+                        <li>asesoramiento@gmail.com</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <footer >
+            <div class="footer__logo">
+                <a href="../index.html"><img src="../images/icon_footer.png" alt="icon_footer.png" ></a>
+                <p>Banco Nueva Era</p>
+            </div>
+             <p>© 2022 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

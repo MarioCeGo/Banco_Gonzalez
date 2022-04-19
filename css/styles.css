@@ -1,0 +1,1116 @@
+/* --- Pagina general --- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+header{
+    /* background-color: rgba(255, 255, 255, 0.301);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+    backdrop-filter: blur(10px); */
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+a{
+    text-decoration: none;
+}
+
+header nav a{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header nav ul{
+    list-style: none;
+    font-size: 0; 
+}
+header nav li{
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-align: center;
+    margin-left: 50px;
+}
+header nav li a:hover{
+    background-clip: content-box;
+}
+header nav ul ul {
+    position: absolute;
+    display: none;
+}
+header nav ul ul li {
+    display: block;
+    
+}
+
+header nav ul li:hover ul{
+    display: block;
+
+    text-align: left;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.301);    
+}
+h1{
+    font-size: 45px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #1e212b8e;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    
+}
+
+.footer__logo{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* --- Pagina general --- */
+
+/* --------------------------------------------------- */
+
+/* --- Pagina index --- */
+.contenedorPrincipal{
+    display: grid;
+    grid-template-areas: 
+                        "header header header"
+                        "bienvenida bienvenida bienvenida"
+                        "main main main"
+                        "infoResumida infoResumida infoResumida"
+                        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px auto auto auto 200px;
+    
+}
+main{
+    grid-area: main;
+    
+}
+.bienvenida{
+    grid-area: bienvenida;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 500px auto;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+}
+
+.bienvenida__texto h2{
+    font-size: 36px;
+}
+.tarjeta1{
+    width: 450px;
+}
+.tarjeta2{
+    height: 500px;
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.infoResumida{
+    grid-area: infoResumida;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.boxTarjetas{
+    background-color:#f9f9f9;
+    z-index: 0;
+    color: black;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: box-shadow 500ms;
+}
+.boxTarjetas__imagen{
+    border-radius: 15px;
+    max-width: 400px;
+}
+/*  */
+.boxTarjetaV__imagen{
+    border-radius: 15px;
+    width: 50%;
+    display: none;
+}
+.boxTarjeta__parrafo{
+    text-align: justify;
+}
+.boxTarjeta__boton{
+    color: black;
+    position: static;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    padding: 5px;
+    display: block;
+    margin: 5px;
+    bottom: 0;
+    transition: 500ms;
+}
+.boxTarjeta__boton:hover{
+    background-color: #1e212b8e;
+    color: white;
+}
+.tablaComp{
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    background-color:#f9f9f9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.tablaComp a{
+    color: black;
+}
+.tablaComp a:hover{
+    color: #19bff2;
+}
+.tablaComp th, td{
+    text-align: center;
+    vertical-align: top;
+    width: 25%;
+}
+.tablaComp caption{
+    background-color:#f9f9f9;
+    border-radius: 15px;
+    z-index: -1;
+    font-size: 20px;
+}
+.tablaComp__checks{
+    margin: 10px;
+}
+.beneficios__index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo_index_beneficios{
+    font-size: 36px;
+}
+.boxBeneficios__index{
+    color:black;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 300px;
+    width: 250px;
+    margin: 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 500ms;
+}
+.boxBeneficios__index img{
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: white;
+}
+.boxBeneficios__index h3{
+    font-weight: normal;
+}
+.boxBeneficios__index:hover{
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0, 0.363);
+}
+
+/* --- Pagina index --- */
+
+/* --------------------------------------------------- */
+
+/* --- Pagina tarjetas --- */
+.contenedorTarjetas{
+    display: grid;
+    grid-template-areas: 
+                        "header header header"
+                        "mainT mainT mainT "
+                        "footer footer footer";
+    grid-template-rows: 70px auto 200px;
+    
+}
+.mainT{
+    grid-area: mainT;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.mainT__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 50px; */
+}
+.boxInfoTarjeta{
+    background-color:#f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.267);
+    transition: all 1s;
+}
+.boxInfoTarjeta h2{
+    text-align: center;
+}
+.boxInfoTarjeta__parrafo{
+    margin: 15px;
+    text-align: justify;
+}
+.boxInfoTarjeta__boton{
+    position: static;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    padding: 5px;
+    display: block;
+    margin: 5px;
+
+    transition: 500ms;
+}
+.boxInfoTarjeta__boton:hover{
+    background-color: #1e212b8e;
+    color: white;
+}
+.boxInfoTarjeta__boton a{
+    width: 100px;
+    height: 50px;
+}
+.boxInfoTarjeta ul{
+    list-style-image: url(../images/viñeta.png);
+    margin: 15px;
+    margin-left: 35px;
+}
+/* --- Pagina tarjetas --- */
+
+/* --------------------------------------------------- */
+
+/* --- Pagina Beneficios --- */
+
+.contenedorBeneficios{
+    display: grid;
+    grid-template-areas: 
+                        "header header header"
+                        "mainBeneficios mainBeneficios mainBeneficios "
+                        "footer footer footer";
+    grid-template-rows: 70px auto 200px;
+    
+}
+.mainBeneficios{
+    grid-area: mainBeneficios;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.boxMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boxMain__beneficios{
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 380px;
+    max-width: 250px;
+    margin: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 500ms;
+}
+.boxMain__beneficios img{
+    max-height: 200px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: white;
+}
+.boxMain__beneficios p{
+    text-align: justify;
+}
+
+
+.boxMain__beneficios:hover{
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0, 0.363);
+}
+
+/* --- Pagina Beneficios --- */
+
+/* --------------------------------------------------- */
+
+/* --- Pagina Contacto --- */
+
+.contenedorContacto{
+    display: grid;
+    grid-template-areas: 
+                        "header"
+                        "mainContacto"
+                        "seccionContacto"
+                        "footer";
+    grid-template-rows: 70px 90vh auto 200px;
+}
+.mainContacto{
+    grid-area: mainContacto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.sectionFormContacto{
+    display: flex;
+    justify-content: center;
+}
+.formContacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    width: 550px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
+    padding: 15px;
+}
+
+.formContacto fieldset{
+    border: none;
+}
+.formContacto legend{
+    font-size: 24px;
+    padding-top: 15px;
+}
+.formContacto input[type=text], input[type=number], input[type=email]{
+    background-color: #ffffff9f;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    border-radius: 4px;
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: large;
+    padding-left: 15px;
+}
+
+.formContacto select {
+    width: 500px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff9f;
+    font-size: large;
+}
+.formContacto textarea {
+    width: 500px;
+    height: 150px;
+    padding: 12px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    border-radius: 4px;
+    background-color: #ffffff9f;
+    resize: none;
+    font-size: large;
+}
+.formContacto__divBoton{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 15px;
+}
+.formContacto__boton{
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    display: block;
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    transition: all 500ms;
+}
+.formContacto__boton:hover{
+    background-color: #1e212b8e;
+    color: white;
+}
+.sectionContacto{
+    grid-area: seccionContacto;
+    margin-top: 50px;
+    border-top: 3px solid black;
+    padding-left: 150px;
+}
+.sectionContacto ul{
+    list-style-image: url(../images/viñeta.png);
+    margin: 15px;
+    margin-left: 35px;
+
+}
+.tituloLista{
+    font-size: large;
+    font-weight: bold;
+}
+
+/* --- Pagina Contacto --- */
+
+/* --------------------------------------------------- */
+
+/* --- Pagina Abrir Cuenta --- */
+
+.contenedorAbrirCuenta{
+    display: grid;
+    grid-template-areas: 
+                        "header"
+                        "mainAC"
+                        "footer";
+    grid-template-rows: 70px auto 200px;
+}
+.mainAbrirCuenta{
+    grid-area: mainAC;
+    margin-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.sectionFormCrearCuenta{
+    display: flex;
+    justify-content: center;
+}
+.formCrearCuenta{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
+    width: 550px;
+    padding: 15px;
+}
+.formCrearCuenta fieldset{
+    border: none;
+}
+.formCrearCuenta legend{
+    padding-top: 15px;
+    font-size: 24px;
+}
+.formCrearCuenta input[type=text], input[type=number], input[type=email], input[type=date]{
+    background-color: #ffffff9f;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    border-radius: 4px;
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: large;
+    padding-left: 15px;
+}
+.formCrearCuenta select {
+    width: 500px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff9f;
+    font-size: large;
+    margin: 10px;
+}
+.formCrearCuenta__divArchivos{
+    margin: 15px;
+    margin-bottom: 0;
+}
+.formCrearCuenta__divArchivos input[type=file]{
+    margin-top: 15px;
+}
+.formCrearCuenta__boton{
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    transition: all 500ms;
+}
+.formCrearCuenta__boton:hover{
+    background-color: #1e212b8e;
+    color: white;
+}
+.formCrearCuenta__divBoton{
+    display: inline-block;
+    width: 500px;
+    margin-top: 10px;
+}
+
+/* --- Pagina Abrir Cuenta --- */
+
+/* --------------------------------------------------- */
+
+/* --- Responsivo ---  */
+@media (max-width: 768px){
+    /* --- Pagina general --- */
+    header{
+        height: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header nav li{
+        font-size: 14px;
+        margin: 0;
+        margin-right: 10px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .header__logo{
+        margin: 0;
+    }
+    header nav ul li:hover ul{
+        display: none;
+    
+        text-align: left;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.301);    
+    }
+    footer{
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .footer__logo{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /* --- Pagina general --- */
+    
+    /* --------------------------------------------------- */
+
+    /* --- Pagina index --- */
+    .contenedorPrincipal{
+        display: grid;
+        grid-template-areas: 
+                            "header"
+                            "bienvenida"
+                            "main"
+                            "infoResumida"
+                            "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 100px auto auto auto 200px;
+        
+    }
+    .bienvenida{
+        grid-template-columns: 450px auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .tarjetas{
+        margin-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-evenly;
+    }
+    .boxTarjetas{
+        margin-bottom: 10px;
+    }
+    .boxTarjetas__imagen{
+        max-width: 200px;
+    }
+    .infoResumida{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .tablaComp{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .beneficios__index{
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    .boxBeneficios__index{
+        height: 200px;
+        width: 125px;
+        margin: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .boxBeneficios__index img{
+        height: 90px;
+        margin: 10px;
+    }
+
+    /* --- Pagina index --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina tarjetas --- */
+    .contenedorTarjetas{
+        display: grid;
+        grid-template-areas: 
+                            "header"
+                            "mainT"
+                            "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 100px auto 200px;
+        
+    }
+    .mainT{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .boxInfoTarjeta{
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 5%;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.267);
+        transition: all 1s;
+    }
+    .boxInfoTarjeta__parrafo{
+        margin: 0;
+    }
+
+    /* --- Pagina tarjetas --- */
+
+    /* --------------------------------------------------- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina Beneficios --- */
+
+    .contenedorBeneficios{
+        display: grid;
+        grid-template-areas: 
+                            "header"
+                            "mainBeneficios"
+                            "footer";
+        grid-template-rows: 100px auto 200px;
+        grid-template-columns: 100vw;
+    }
+    .mainBeneficios{
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+    }
+    .boxMain__beneficios{
+        height: auto;
+        width: 150px;
+        margin: 15px;
+        border-radius: 15px;
+        padding: 0;
+    }
+    .boxMain__beneficios img{
+        max-height: 100px;
+        margin: 15px;
+    }
+    .boxMain__beneficios h3{
+        font-size: 16px;
+    }
+    .boxMain__beneficios p{
+        padding: 10px;
+    }
+    /* --- Pagina Beneficios --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina Contacto --- */
+
+    .contenedorContacto{
+        grid-template-rows: 100px 90vh auto 200px;
+        grid-template-columns: 100vw;
+    }
+    .mainContacto{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .formContacto{
+        width: 500px;
+        padding: 15px;
+    }
+    .formContacto legend{
+        font-size: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+    .formContacto input[type=text], input[type=number], input[type=email]{
+        width: 450px;
+        height: 45px;
+        padding-left: 15px;
+    }
+    .formContacto select {
+        width: 450px;
+        padding: 16px 20px;
+    }
+    .formContacto textarea {
+        width: 450px;
+    }
+    .formContacto__divBoton{
+        width: 450px;
+        margin: 15px;
+    }
+    .sectionContacto{
+        padding-left: 15px;
+    }
+    /* --- Pagina Contacto --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina Abrir Cuenta --- */
+
+    .contenedorAbrirCuenta{
+        grid-template-rows: 100px auto 200px;
+        grid-template-columns: 100vw;
+    }
+    .mainAbrirCuenta{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .formCrearCuenta{
+        width: 500px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .formCrearCuenta label{
+        display: inline-block;
+        padding-left: 15px;
+    }
+    .formCrearCuenta legend{
+        font-size: 20px;
+        padding-top: 0px;
+        padding-left: 25px;
+    }
+    .formCrearCuenta input[type=text], input[type=number], input[type=email], input[type=date]{
+        width: 450px;
+        height: 45px;
+        padding-left: 15px;
+    }
+    .formCrearCuenta select {
+        width: 450px;
+        padding: 16px 20px;
+    }
+    .formCrearCuenta__boton{
+        width: 450px;
+    }
+    .formCrearCuenta__divBoton{
+        width: 500px;
+
+    }
+    .formCrearCuenta fieldset{
+        border: none;
+        width: 500px;
+    }
+}
+@media (max-width: 368px){
+    /* --- Pagina general --- */
+    header{
+        height: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    header nav li{
+        font-size: 14px;
+        margin: 0;
+        margin-right: 10px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .linicio{
+        display: none;
+    }
+    .header__logo{
+        margin: 0;
+    }
+    header nav ul li:hover ul{
+        display: none;
+    
+        text-align: left;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.301);    
+    }
+    footer{
+        padding-top: 15px;
+        flex-direction: column;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .footer__logo{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /* --- Pagina general --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina index --- */
+    .contenedorPrincipal{
+        grid-template-areas: 
+                            "header"
+                            "bienvenida"
+                            "main"
+                            "infoResumida"
+                            "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 100px auto auto auto 200px;
+    }
+    .bienvenida{
+        grid-template-columns: 150px auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .bienvenida__texto h2{
+        font-size: 26px;
+    }
+    .bienvenida__texto p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .tarjeta1{
+        width: 350px;
+    }
+    .tarjeta2{
+        height: 400px;
+    }
+    main{
+        width: 100vw;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 10px;
+        height: auto;
+
+    }
+    .boxTarjetas{
+        padding: 25px;
+        margin-bottom: 10px;
+    }
+    .tarjetas img{
+        display: none;
+    }
+    .contentTarjetas div{
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+    .contentTarjetas{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .tarjetas__nav{
+        display: none;
+    }
+    .infoResumida{
+        grid-area: infoResumida;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .tablaComp{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .boxBeneficios__index{
+        height: 200px;
+        width: 125px;
+        margin: 15px;
+        border-radius: 15px;
+        padding: 0px;
+    }
+    .boxBeneficios__index h3{
+        font-size: 16px;
+    }
+    .boxBeneficios__index img{
+        height: 100px;
+        margin: 15px;
+    }
+    /* --- Pagina index --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina tarjetas --- */
+    .contenedorTarjetas{
+        display: grid;
+        grid-template-areas: 
+                            "header"
+                            "mainT"
+                            "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 100px auto 200px;
+        
+    }
+    .mainT{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .boxInfoTarjeta{
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 5%;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.267);
+        transition: all 1s;
+    }
+    .boxInfoTarjeta__parrafo{
+        margin: 0;
+    }
+
+    /* --- Pagina tarjetas --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina Beneficios --- */
+
+    .contenedorBeneficios{
+        display: grid;
+        grid-template-areas: 
+                            "header"
+                            "mainBeneficios"
+                            "footer";
+        grid-template-rows: 100px auto 200px;
+        grid-template-columns: 100vw;
+    }
+    .mainBeneficios{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .boxMain__beneficios{
+        height: auto;
+        max-width: 125px;
+        margin: 15px;
+        border-radius: 15px;
+        padding: 0;
+    }
+    .boxMain__beneficios img{
+        max-height: 100px;
+        margin: 15px;
+    }
+    .boxMain__beneficios h3{
+        font-size: 16px;
+    }
+    .boxMain__beneficios p{
+        padding: 10px;
+    }
+    /* --- Pagina Beneficios --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina Contacto --- */
+
+    .contenedorContacto{
+        grid-template-rows: 100px 90vh auto 200px;
+        grid-template-columns: 100vw;
+    }
+    .mainContacto{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .formContacto{
+        width: 340px;
+        padding: 15px;
+    }
+    .formContacto legend{
+        font-size: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+    .formContacto input[type=text], input[type=number], input[type=email]{
+        width: 300px;
+        height: 45px;
+        padding-left: 15px;
+    }
+    .formContacto select {
+        width: 300px;
+        padding: 16px 20px;
+    }
+    .formContacto textarea {
+        width: 300px;
+    }
+    .formContacto__divBoton{
+        width: 300px;
+        margin: 15px;
+    }
+    .sectionContacto{
+        padding-left: 15px;
+    }
+    /* --- Pagina Contacto --- */
+
+    /* --------------------------------------------------- */
+
+    /* --- Pagina Abrir Cuenta --- */
+
+    .contenedorAbrirCuenta{
+        grid-template-rows: 100px auto 200px;
+        grid-template-columns: 100vw;
+    }
+    .mainAbrirCuenta{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .formCrearCuenta{
+        width: 340px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .formCrearCuenta label{
+        display: inline-block;
+        padding-left: 15px;
+    }
+    .formCrearCuenta legend{
+        font-size: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+
+    }
+    .formCrearCuenta input[type=text], input[type=number], input[type=email], input[type=date]{
+        width: 300px;
+        height: 45px;
+        padding-left: 15px;
+    }
+    .formCrearCuenta select {
+        width: 300px;
+        padding: 16px 20px;
+    }
+    .formCrearCuenta__boton{
+        width: 300px;
+    }
+    .formCrearCuenta__divBoton{
+        width: 340px;
+
+    }
+    .formCrearCuenta fieldset{
+        border: none;
+        width: 340px;
+    }
+}

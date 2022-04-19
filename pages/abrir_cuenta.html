@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    
+    <div class="contenedorAbrirCuenta">
+        <header>
+            <a href="../index.html"><img src="../images/icon.png" alt="icon.png" class="header__logo"></a>
+            <nav>
+                <ul>
+                    <li class="linicio"><a href="../index.html">Inicio</a></li>
+                    <li><a href="tarjetas.html">Tarjetas</a>
+                        <ul>
+                            <li><a href="tarjetas.html#tarjeta_credito">Tarjeta de crédito</a></li>
+                            <li><a href="tarjetas.html#tarjeta_debito">Tarjeta de débito</a></li>
+                            <li><a href="tarjetas.html#tarjeta_digital">Tarjeta digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Abrir cuenta</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainAbrirCuenta">
+            <h1>Abrir cuenta</h1>
+            <section data-aos="fade-up" data-aos-duration="2500" class="sectionFormCrearCuenta">
+                <!-- Formulario para que el cliente complete para abrirse una cuenta -->
+                <form action="" class="formCrearCuenta">
+                    <fieldset>
+                        <legend>Formularo para crear la cuenta</legend>
+                        <input type="text" name="nombre" id="" required placeholder="Nombre*">
+                        <input type="text" name="apellidos" id="" required placeholder="Apellido*">
+                        <label for="fecha_nacimiento" >Fecha de nacimiento:* </label>
+                        <input type="date" name="fecha_nacimiento" id="" required>
+                        <input type="number" name="dni" id="" required placeholder="DNI*">
+                        <input type="number" name="telefono" id="" placeholder="Telefono*">
+                        <input type="number" name="celular" id="" required placeholder="Celular*"> 
+                        <input type="email" name="email" id="" required placeholder="Email*">
+                        <select name="sexo" id="" required>
+                            <option value="" disabled selected>Seleccione el sexo</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="no_binario">No binario</option>
+                            <option value="otros">Otros...</option>
+                        </select>
+                        <select name="tipo_cuenta" id="" required>
+                            <option value="" disabled selected>Seleccione el tipo de cuenta</option>
+                            <option value="credito">Credito</option>
+                            <option value="debito">Debito</option>
+                            <option value="digital">Digital</option>
+                        </select>
+                        <div class="formCrearCuenta__divArchivos"> 
+                            <label for="frente_dni">Imagen del frente del DNI:* </label>
+                            <input type="file" name="frente_dni" id="" required >
+                            <label for="dorso_dni">Imagen del dorso del DNI:* </label>
+                            <input type="file" name="dorso_dni" id="" required>
+                        </div>
+                        <div class="formCrearCuenta__divBoton">
+                            <input type="submit" value="Abrir cuenta" class="formCrearCuenta__boton">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        
+        <footer >
+            <div class="footer__logo">
+                <a href="../index.html"><img src="../images/icon_footer.png" alt="icon_footer.png" ></a>
+                <p>Banco Nueva Era</p>
+            </div>
+             <p>© 2022 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
