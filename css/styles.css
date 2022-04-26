@@ -90,6 +90,9 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
 }
+.boton{
+    background: linear-gradient(45deg, #19bff24d, #9b19f248);
+}
 
 /* --- Pagina general --- */
 
