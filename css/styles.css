@@ -26,10 +26,16 @@ header{
     padding-left: 150px;
     padding-right: 150px;
 }
+/* .header__logo{
+    margin-top: 10px;
+} */
 a{
     text-decoration: none;
 }
-
+header nav{
+    position: relative;
+    right: 10px;
+}
 header nav a{
     color: black;
     font-weight: bold;
@@ -164,15 +170,17 @@ main{
     padding: 25px;
     text-align: center;
     transition: box-shadow 500ms;
+    margin: 5px;
 }
 .boxTarjetas__imagen{
     border-radius: 15px;
-    max-width: 400px;
+    /* max-width: 400px; */
+    width: 100%;
 }
 /*  */
 .boxTarjetaV__imagen{
     border-radius: 15px;
-    width: 50%;
+    max-width: 50%;
     display: none;
 }
 .boxTarjeta__parrafo{
@@ -689,6 +697,7 @@ main{
         padding-right: 15px;
     }
     .boxInfoTarjeta{
+        border: 0px;
         padding: 15px;
         border-radius: 15px;
         margin-bottom: 5%;
@@ -964,7 +973,7 @@ main{
     /* --------------------------------------------------- */
 
     /* --- Pagina tarjetas --- */
-    .contenedorTarjetas{
+    /* .contenedorTarjetas{
         display: grid;
         grid-template-areas: 
                             "header"
@@ -973,7 +982,7 @@ main{
         grid-template-columns: 100vw;
         grid-template-rows: 100px auto 200px;
         
-    }
+    } */
     .mainT{
         padding-left: 15px;
         padding-right: 15px;

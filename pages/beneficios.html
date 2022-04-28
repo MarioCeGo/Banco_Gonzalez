@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="../images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="contenedorBeneficios">
-        <header>
-            <a href="../index.html"><img src="../images/icon.png" alt="icon.png" class="header__logo"></a>
-            <nav>
+    <div class="contenedorBeneficios container-fluid">
+        <header class="row">
+            <a class="header__logo col-lg-1 col-md-1 col-sm-1" href="../index.html"><img src="../images/icon.png" alt="icon.png" ></a>
+            <nav class="col-lg-5 col-md-8 col-sm-10">
                 <ul>
                     <li class="linicio"><a href="../index.html">Inicio</a></li>
                     <li><a href="tarjetas.html">Tarjetas</a>
@@ -98,7 +99,7 @@
                 
             </main>
         </div>
-        <footer >
+        <footer class="row">
             <div class="footer__logo">
                 <a href="../index.html"><img src="../images/icon_footer.png" alt="icon_footer.png" ></a>
                 <p>Banco Nueva Era</p>
@@ -109,7 +110,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>  
+    </script> 
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

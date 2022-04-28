@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="contenedorPrincipal">
-        <header class=" animate__animated animate__fadeInDown">
-            <a href="index.html"><img src="images/icon.png" alt="icon.png" class="header__logo"></a>
-            <nav>
+    <div class="container-fluid contenedorPrincipal">
+        <header class="row animate__animated animate__fadeInDown ">
+            <a class="header__logo col-lg-1 col-md-1 col-sm-1" href="index.html"><img src="images/icon.png" alt="icon.png" ></a>
+            <nav class="col-lg-5 col-md-8 col-sm-10">
                 <ul>
                     <li class="linicio"><a href="index.html">Inicio</a></li>
                     <li><a href="pages/tarjetas.html">Tarjetas</a>
@@ -31,11 +32,11 @@
             </nav>
         </header>
        
-        <main class="main">
+        <main class="main row">
             
-            <div class="bienvenida">
+            <div class="bienvenida row">
                 <!-- <h1>Banco nueva era</h1> -->
-                <div class="bienvenida__texto">
+                <div class="bienvenida__texto col-lg-6 col-sm-4">
                     <h2>Abre tu cuenta</h2>
                     <p>y maneja tu dinero a tu manera.</p>
                 </div>
@@ -47,24 +48,24 @@
             </div>
                 <!-- Informacion resumida dobre los tipos de tarjetas -->
             <div data-aos="fade-up" data-aos-duration="2500" class="tarjetas">
-                <div class="boxTarjetas">
-                    <img src="images/tarjeta.png" alt="tarjeta.png" class="boxTarjetas__imagen">
+                <div class="boxTarjetas col-lg-4 col-md-12 col-sm-12">
+                    <img src="images/tarjeta.png" alt="tarjeta.png" class="boxTarjetas__imagen img-fluid">
                     <h2>Tarjeta de crédito</h2>
                     <img src="images/tarjeta_vertical.png" alt="tarjeta.png" class="boxTarjetaV__imagen">
                     <p class="boxTarjeta__parrafo">Lorem ipsum, dolor sit amet consectetur. adipisicing elit. Quidem deleniti repudiandae placeat esse, ullam possimus doloremque corruptiusto accusantium consequatur ducimus tempore corporis consequuntur voluptate cumque molestias dolore inventore? Tenetur.</p>
                     <a class="boxTarjeta__boton boton" href="pages/tarjetas.html#tarjeta_credito">Más información</a>
                 </div>
 
-                <div class="boxTarjetas">
-                    <img src="images/tarjeta.png" alt="" class="boxTarjetas__imagen">
+                <div class="boxTarjetas col-lg-4 col-md-12 col-sm-12">
+                    <img src="images/tarjeta.png" alt="" class="boxTarjetas__imagen img-fluid">
                     <h2>Tarjeta de débito</h2>
                     <img src="images/tarjeta_vertical.png" alt="tarjeta.png" class="boxTarjetaV__imagen">
                     <p class="boxTarjeta__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus vero est error aliquid fugiat distinctio, quibusdam ad optipossimus labore quod eum necessitatibus cupiditate earum quo vitae odit magnam.</p>
                     <a href="pages/tarjetas.html#tarjeta_debito" class="boxTarjeta__boton boton">Más información</a>
                 </div>
 
-                <div class="boxTarjetas">
-                    <img src="images/tarjeta.png" alt="" class="boxTarjetas__imagen">
+                <div class="boxTarjetas col-lg-4 col-md-12 col-sm-12">
+                    <img src="images/tarjeta.png" alt="" class="boxTarjetas__imagen img-fluid">
                     <h2>Tarjeta digital</h2>
                     <img src="images/tarjeta_vertical.png" alt="tarjeta.png" class="boxTarjetaV__imagen">
                     <p class="boxTarjeta__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolores, nulla commodi eligendi doloremque eius iure! In ipsum adipisci, vel ea vitae obcaecati quisquam praesentium cum? Hic maxime facilis cum?</p>
@@ -73,9 +74,9 @@
             </div>
             
         </main>
-        <article class="infoResumida">
+        <article class="infoResumida row">
             <!-- Tabla comparativa entre los distino tipos de tarjetas -->
-            <table data-aos="fade-up" data-aos-duration="2500" cellpadding="5px" cellspacing="5px" class="tablaComp">
+            <table data-aos="fade-up" data-aos-duration="2500" cellpadding="5px" cellspacing="5px" class="tablaComp row">
                 <!-- <thead>
                     <th>Comparativa</th>
                 </thead> -->
@@ -168,7 +169,7 @@
                 
             </section>
         </article>
-        <footer >
+        <footer class="row" >
                 <div class="footer__logo">
                     <a href="index.html"><img src="images/icon_footer.png" alt="icon_footer.png" ></a>
                     <p>Banco Nueva Era</p>
@@ -177,6 +178,7 @@
         </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init();
     </script>
